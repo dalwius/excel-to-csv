@@ -1,0 +1,25 @@
+Author: Dalwin Sundar
+Date: Aug 2, 2023
+
+Command:
+    python excel-to-csv.py <input file name>
+
+Where,
+<input file name> is the name of the excel file (.xlsx file) from the same directory and an error 
+message will be displayed otherwise.
+
+Description:
+Run this command to convert the excel spreadsheet with the following columns to csv file:
+- Agency name
+- String with first name, last name, title, phone number, and email
+    Example: FN LN, Title, (123) 456-7890, example@company.com
+- Unused status column with sent or nothing
+
+The name of the output csv file will have the same name as the specified input
+file name (extension xlsx) except that the file extension will be csv. 
+Specifying input file name is optional. If it is not specified, the default input name is "input.xlsx", 
+and the corresponding output file name will be "output.xlsx".
+
+Example line in CSV file: 
+The converted line for the example input above will have the following line in the output CSV file:
+    Agency name,sent,FN LN,Title,(123) 456-7890,example@company.com
